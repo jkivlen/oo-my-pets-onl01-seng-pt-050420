@@ -80,7 +80,7 @@ class Owner
     end
     
     Cat.all.each do |pets|
-      if pets.owners == self
+      if pets.owner == self
         cat << pets
       end
     end

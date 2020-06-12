@@ -8,7 +8,7 @@ class Owner
     @name = name
     @species = species
     @@all << self
-    @cat = cat
+   
   end
 
   def species

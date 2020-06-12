@@ -67,10 +67,24 @@ class Owner
       cats.owner = nil
       
     }
-    
-    
-    
-  end
+    end
   
+  def list_pets
+    dogs = []
+    cats = []
+    
+    Dogs.all.each do |dogs| 
+      if dogs.owner == self
+        dogs << dogs
+      end
+    end
+    
+    Cats.all.each do |cats|
+      if cats.owners == self
+        cats << cats
+      end
+    end
+        
+  end
   
 end

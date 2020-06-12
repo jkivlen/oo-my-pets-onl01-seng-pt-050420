@@ -21,6 +21,8 @@ class Cat
 @@all
 end
   
-  def 
+  def buy_cat(new_cat)
+    
+  end
   
 end

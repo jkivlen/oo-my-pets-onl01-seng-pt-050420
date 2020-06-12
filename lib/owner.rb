@@ -75,13 +75,13 @@ class Owner
     
     Dogs.all.each do |dogs| 
       if dogs.owner == self
-        dogs << dogs
+        dog << dogs
       end
     end
     
     Cats.all.each do |cats|
       if cats.owners == self
-        cats << cats
+        cat << cats
       end
     end
         

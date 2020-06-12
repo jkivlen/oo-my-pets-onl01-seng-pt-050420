@@ -70,8 +70,8 @@ class Owner
     end
   
   def list_pets
-    dogs = []
-    cats = []
+    dog = []
+    cat = []
     
     Dogs.all.each do |dogs| 
       if dogs.owner == self

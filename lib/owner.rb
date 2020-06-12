@@ -84,6 +84,8 @@ class Owner
         cat << pets
       end
     end
+       
+       "I have #{dog.count}dog(s), and #{cat.count} cat(s)."
         
   end
   

@@ -8,7 +8,7 @@ class Owner
     @name = name
     @species = species
     @@all << self
-    @cat = []
+    @cat = cat
   end
 
   def species
@@ -37,6 +37,10 @@ class Owner
     
     def dogs
       Dog.all.select {|dogs| dogs.owner ==self}
+    end
+    
+    def buy_cat(new_cat)
+      Cat.new(new_cat, self)
     end
   
 end
